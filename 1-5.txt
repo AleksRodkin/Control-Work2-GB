@@ -1,0 +1,54 @@
+1. Используя команду cat в терминале операционной системы Linux, создать два файла Домашние животные (заполнив файл собаками, кошками, хомяками) 
+cat > ДомашниеЖивотные
+Пёс
+Собаня
+Китя
+Кощька
+Хома
+Хомячелло
+
+и Вьючные животными заполнив файл Лошадьми, верблюдами и ослы), 
+cat > ВьючныеЖивотные
+Лошадь1
+Лошадь2
+Верблюд
+Тоже Верблюд
+Осел
+Осёл
+
+а затем объединить их. Просмотреть содержимое созданного файла. Переименовать файл, дав ему новое имя (Друзья человека).  
+cat ДомашниеЖивотные ВьючныеЖивотные > ДрузьяЧеловека
+cat ДрузьяЧеловека
+
+2. Создать директорию, переместить файл туда. 
+mkdir newdir
+ls
+mv ДрузьяЧеловека /home/vmgb/GB/ControlWork/newdir
+cd newdir/
+ls
+
+3. Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория. 
+sudo apt install ./mysql-apt-config_0.8.28-1_all.deb 
+sudo apt list m* 
+sudo apt install mysql-source-8.0
+
+4. Установить и удалить deb-пакет с помощью dpkg. 
+sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb 
+sudo dpkg -r google-chrome-stable
+
+5. Выложить историю команд в терминале ubuntu
+cat > ДомашниеЖивотные
+cat > ВьючныеЖивотные
+cat ДомашниеЖивотные ВьючныеЖивотные > ДрузьяЧеловека
+cat ДрузьяЧеловека
+mkdir newdir
+ls
+mv ДрузьяЧеловека /home/vmgb/GB/ControlWork/newdir
+cd newdir/
+ls
+sudo apt install ./mysql-apt-config_0.8.28-1_all.deb 
+sudo apt list m* 
+sudo apt install mysql-source-8.0
+sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb 
+sudo dpkg -r google-chrome-stable
+
